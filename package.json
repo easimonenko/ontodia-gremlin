@@ -1,0 +1,41 @@
+{
+  "name": "ontodia-gremlin",
+  "version": "0.1.0",
+  "description": "Server for support Gremlin in Ontodia.",
+  "keywords": [
+    "ontodia",
+    "gremlin"
+  ],
+  "homepage": "https://github.com/easimonenko/ontodia-gremlin",
+  "bugs": {
+    "url": "https://github.com/easimonenko/ontodia-gremlin/issues"
+  },
+  "license": "LGPL-2.1-or-later",
+  "author": "Evgeny Simonenko <easimonenko@mail.ru> (https://easimonenko.github.io)",
+  "main": "dist/server.js",
+  "bin": {
+    "ontodia-gremlin": "./dist/server.js"
+  },
+  "repository": "github:easimonenko/ontodia-gremlin",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "test": "jest --forceExit --coverage --verbose"
+  },
+  "engines": {
+    "node": ">=8.10.0",
+    "npm": ">=3.5.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "ontodia": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.0.2",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.1"
+  }
+}
